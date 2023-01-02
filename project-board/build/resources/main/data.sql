@@ -1,14 +1,6 @@
 insert into user_account(user_id, user_password, nick_name, email,  created_at, created_by, modified_at, modified_by)values ('apple', '1234','사과', 'apple@apple',  now(), 'admin', now(), 'admin');
 
 
-
-
-
-
-
-
-
-
 insert into article (title, content, hashtag, created_at, created_by, modified_at, modified_by) values ('Pannier', 'webeden.co.uk', 'Rubber', '2022-07-05', 'Common duiker', '2022-11-28', 'Yellow-throated sandgrouse');
 insert into article (title, content, hashtag, created_at, created_by, modified_at, modified_by) values ('Keylex', 'diigo.com', 'Plexiglass', '2021-12-28', 'Peccary, collared', '2022-11-15', 'Common dolphin');
 insert into article (title, content, hashtag, created_at, created_by, modified_at, modified_by) values ('Voltsillam', '1und1.de', 'Glass', '2022-07-20', 'Genet, common', '2022-07-08', 'Vulture, king');
