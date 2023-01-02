@@ -1,5 +1,6 @@
 package com.koreait.projectboard.domain;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+@Disabled("Spring Data REST Test는 불팔요하므로 제외시킴")
 @DisplayName("Data REST - API TEST")
 @AutoConfigureMockMvc // MockMvc 사용하기 위해
 @Transactional // 실제로 운영하느 서버가 있으면 테스트와 운영 서버를 분리해서
