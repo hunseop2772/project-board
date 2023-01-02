@@ -18,26 +18,25 @@ import java.util.Set;
 
 @Getter
 @ToString
-@Table(indexes = {
+@Table(indexes = { //@Table은 엔티티와 매핑할 테이블을 지정
         @Index(columnList = "title"),
         @Index(columnList = "hashtag"),
         @Index(columnList = "createdAt"),
         @Index(columnList = "createdBy")
+        // name을 추가하면 테이블이름이 name값으로 설정이 되고 생략시 Entity이름으로 테이블이 만들어지는 것을 확인할 수 있다.
 })
-@EntityListeners(AuditingEntityListener.class)
 @Entity
-public class Article {
+//@Entity 어노테이션은 JPA를 사용해 테이블과 매핑할 클래스에 붙여주는 어노테이션이다. 이 어노테이션을 붙임으로써 JPA가 해당 클래스를 관리하게 된다.
+public class Article extends AuditingFields{
     @Id// Entity 입력할 경우 프라이머리 키를 선언해 줘야한다.
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // 기본 키 생성을 DB에 위임 (Mysql)
     private Long id;
     @Setter @Column(nullable = false) private String title; // 제목
     @Setter @Column(nullable = false, length = 10000) private String content; // 본문
     @Setter private String hashtag; // 해시태그
 
-    @CreatedDate @Column(nullable = false) private LocalDateTime createdAt; // 생성일시 수정 시 자동 업데이트
-    @CreatedBy @Column(nullable = false, length = 100) private String createdBy; // 생성자
-    @LastModifiedDate @Column(nullable = false) private LocalDateTime modifiedAt; // 수정일시
-    @LastModifiedBy @Column(nullable = false, length = 100) private String modifiedBy; // 수정자
+
+    //JPA에서 DB Table의 Column을 Mapping 할 때 @Column Annotation을 사용한다.
 
     @ToString.Exclude
     @OrderBy("id")

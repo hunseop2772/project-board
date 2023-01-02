@@ -20,5 +20,10 @@ spring:
     properties:
       hibernate.format_sql: true
       hibernate.default_batch_fetch_size: 100
-  h2.console.enabled: true
+#  h2.console.enabled: true
   sql.init.mode: always
+  data.rest:
+    base-path: /api # Api 경로
+    detection-strategy: annotated # annotated 내가 걸어논 이들만 들어올 수 있음
+server:
+  port: 8888
