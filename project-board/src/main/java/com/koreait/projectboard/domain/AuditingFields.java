@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 @ToString
 @EntityListeners(AuditingEntityListener.class)
 @MappedSuperclass//이 아이는 부모가 될거야(UserAccount는 자식으로 AuditingFields를 상속한다.)
-public class AuditingFields {
+public abstract class AuditingFields {
 
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) // 데이터의 형태를 사용하기 쉽게 변경하기
     @CreatedDate
