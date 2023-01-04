@@ -25,5 +25,6 @@ spring:
   data.rest:
     base-path: /api # Api 경로
     detection-strategy: annotated # annotated 내가 걸어논 이들만 들어올 수 있음
+  thymeleaf3.decoupled-logic: true
 server:
-  port: 8888
+  port: 9090

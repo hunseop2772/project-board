@@ -3,6 +3,7 @@ package com.koreait.projectboard.domain;
 import com.koreait.projectboard.config.JpaConfig;
 import com.koreait.projectboard.repository.ArticleCommentRepository;
 import com.koreait.projectboard.repository.ArticleRepository;
+import com.koreait.projectboard.repository.UserAccountRepository;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -15,20 +16,23 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
-@Disabled("JPA  Test는 불팔요하므로 제외시킴")
+
 @Import(JpaConfig.class)
 @DisplayName("JPA 연결 테스트")
 @DataJpaTest
 class JpaRepositoryTest {
     private final ArticleRepository articleRepository;
     private final ArticleCommentRepository articleCommentRepository;
+    private final UserAccountRepository userAccountRepository;
 
     public JpaRepositoryTest(
             @Autowired ArticleRepository articleRepository,
-            @Autowired ArticleCommentRepository articleCommentRepository
+            @Autowired ArticleCommentRepository articleCommentRepository,
+            @Autowired UserAccountRepository userAccountRepository
     ){
         this.articleRepository = articleRepository;
         this.articleCommentRepository = articleCommentRepository;
+        this.userAccountRepository = userAccountRepository;
     }
 
     @DisplayName("select 테스트")
@@ -38,16 +42,18 @@ class JpaRepositoryTest {
         assertThat(articles).isNotNull().hasSize(1000);
 
     }
-
     @DisplayName("insert test")
     @Test
     void insert(){
         long prevCount = articleRepository.count();
-        Article saveArticle = articleRepository.save(Article.of("새로운 글","새로운 글을 등록합니다","#new"));
-                //Article.of : 내용 집어넣기
+        UserAccount userAccount = userAccountRepository.save(UserAccount.of("banana", "2222","banana@banana.com", "반하나","바나나"));
+        Article article = Article.of(userAccount, "새로운 글","새로운 글을 등록합니다","#Spring");
+        //Article.of : 내용 집어넣기
+        articleRepository.save(article);
         assertThat(articleRepository.count()).isEqualTo(prevCount+1);
         // 이전 데이터보다 늘어났으면 통과 한다는 의미이다. 추가한 경우 늘어나야 하기 때문이다. 비교하는 것을 의미(assertThat)
     }
+
 
     @DisplayName("update test")
     @Test

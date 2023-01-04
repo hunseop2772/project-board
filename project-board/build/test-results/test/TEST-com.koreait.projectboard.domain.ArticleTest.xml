@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Data REST - API TEST" tests="1" skipped="1" failures="0" errors="0" timestamp="2023-01-02T04:45:44" hostname="C02" time="0.0">
-  <properties/>
-  <testcase name="[API] 댓글 리스트 조회" classname="com.koreait.projectboard.domain.ArticleTest" time="0.0">
-    <skipped/>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
