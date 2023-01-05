@@ -42,6 +42,10 @@ public class UserAccount extends AuditingFields{
     private String nickName;
 
     @Setter
+    @Column(length = 100)
+    private String memo;
+
+    @Setter
     private String name;
 
     protected UserAccount(){}
