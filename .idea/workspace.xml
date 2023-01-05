@@ -4,7 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6263581-75c5-4db6-b340-9b24ea05df4a" name="Changes" comment="" />
+    <list default="true" id="d6263581-75c5-4db6-b340-9b24ea05df4a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/dto/ArticleCommentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/dto/ArticleWithCommentsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/dto/UserAccountDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/dto/response/ArticleCommentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/dto/response/ArticleResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/dto/response/ArticleWithCommentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/service/ArticleCommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-board/src/test/java/com/koreait/projectboard/controller/MainControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-board/src/test/java/com/koreait/projectboard/service/ArticleCommentServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board.zip" beforeDir="false" afterPath="$PROJECT_DIR$/project-board.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/build/reports/tests/test/packages/com.koreait.projectboard.domain.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/memo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/memo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/domain/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/domain/UserAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/dto/ArticleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/dto/ArticleDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/dto/ArticleUpdateDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/repository/ArticleCommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/repository/ArticleCommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/repository/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/repository/ArticleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/src/main/java/com/koreait/projectboard/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board/src/test/java/com/koreait/projectboard/service/ArticleServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-board/src/test/java/com/koreait/projectboard/service/ArticleServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,23 +80,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/study/spring project/project-board&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;520f24e758ba240c77c8a3534ede1671&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/study/spring project/project-board/project-board",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "520f24e758ba240c77c8a3534ede1671",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -75,6 +109,7 @@
       <workItem from="1672186915659" duration="38000" />
       <workItem from="1672186993251" duration="65000" />
       <workItem from="1672187092557" duration="68000" />
+      <workItem from="1672891672260" duration="44000" />
     </task>
     <servers />
   </component>
