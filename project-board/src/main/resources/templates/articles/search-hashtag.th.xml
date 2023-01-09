@@ -4,14 +4,15 @@
     <attr sel="#footer" th:replace="footer :: footer"/>
 
     <attr sel="main" th:object="${articles}">
-        <attr sel="#search-type" th:remove="all-but-first">
-            <attr sel="option[0]"
-                  th:each="searchType : ${searchTypes}"
-                  th:value="${searchType.name}"
-                  th:text="${searchType.description}"
-                  th:selected="${param.searchType != null && (param.searchType.toString == searchType.name)}"/>
+        <attr sel="#hashtags" th:remove="all-but-first">
+            <attr sel="div" th:each="hashtag : ${hashtags}">
+                <attr sel="a" th:class="'text-reset'" th:text="${hashtag}" th:href="@{/articles/search-hashtag(
+                    page=${param.page},
+                    sort=${param.sort},
+                    searchValue=${hashtag}
+                )}"/>
+            </attr>
         </attr>
-        <attr sel="#search-value" th:value="${param.searchValue}"/>
 
         <attr sel="#article-table">
             <attr sel="thead/tr">

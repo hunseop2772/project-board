@@ -31,3 +31,29 @@ Query DSL
  - 생성한 객체를 파일로 저장 할 때
  - 저장한 객체를 읽어올 때
  - 다른 서버에서 생성한 객체를 주고 받을 때
+
+
+ 타임리프
+
+ th:text : 화면에 값을 출력 (일반적인 텍스트 형식으로 출력)
+
+ <attr th:text = "${article}"></attr>
+
+ th:if : 조건문과 같이 사용하며, 해당 조건이 만족한 경우에만 보여준다,
+
+ <attr th:if="${error}">
+    <p> 에러 발생 </p>
+ </attr>
+
+ th:errors : 해당 value의 error가 있는 경우 출력
+
+ th: action : form 태그 이용 시, 경로로 요청을(url) 보낼 때 사용
+
+ th:object : form submit을 할 때 form 데이터가 th:object에 설정해준 객체로 받아짐
+            컨트롤러와 뷰(화면) 사이의 DTO 클래스의 객체
+
+ th:href : <a> 태그의 href 속성과 동일, 콘텍스트 경로를 포함
+
+ th:field : 각각의 필드들을 매핑해주는 역할, 설정해준 값으로 th:object 에 설정해 준 객체의 내부와 매칭
+
+ th:each : 반복문으로 자바의 forEach와 유사
