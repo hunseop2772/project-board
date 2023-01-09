@@ -2,6 +2,7 @@ package com.koreait.projectboard.repository;
 
 import com.koreait.projectboard.domain.Article;
 import com.koreait.projectboard.domain.QArticle;
+import com.koreait.projectboard.repository.querydsl.ArticleRepositoryCustom;
 import com.querydsl.core.types.dsl.DateTimeExpression;
 import com.querydsl.core.types.dsl.StringExpression;
 import org.springframework.data.domain.Page;
@@ -16,6 +17,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 public interface ArticleRepository extends
 
         JpaRepository<Article, Long>,
+        ArticleRepositoryCustom,
         QuerydslPredicateExecutor<Article>, // like검색이 아닌 전체단어 일치 검색
 
 // 쿼리에 적용하고자 하는 엔티티, 기본기능 중 완벽하게 동일한 것만 구분 가능(like는 아님)

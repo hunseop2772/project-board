@@ -50,4 +50,20 @@ public class ArticleController {
         map.addAttribute("totalCount",articleService.getArticleCount());
         return "articles/detail";
     }
+
+    @GetMapping("/search-hashtag")
+    public String searchHashtag(
+            @RequestParam(required = false)String searchValue,
+            @PageableDefault(size = 10, sort = "id", direction = Sort.Direction.DESC) Pageable pageable, ModelMap map
+    ){
+        Page<ArticleResponse> articles = articleService.searchArticleViaHashtag(searchValue, pageable).map(ArticleResponse::from);
+        List<Integer> barNumbers = paginationService.getPaginationBarNumbers(pageable.getPageNumber(),articles.getTotalPages());
+        List<String> hashTags = articleService.getHashtags();
+
+        map.addAttribute("articles",articles);
+        map.addAttribute("hashtags",hashTags);
+        map.addAttribute("paginationBarNumbers",barNumbers);
+        map.addAttribute("searchTypes",SearchType.values());
+        return "articles/search-hashtag";
+    }
 }
