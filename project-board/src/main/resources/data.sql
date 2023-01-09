@@ -1,13 +1,14 @@
-insert into user_account(user_id, user_password, nick_name, email,  created_at, created_by, modified_at, modified_by)values ('apple', '1234','사과', 'apple@apple',  now(), 'admin', now(), 'admin');
+insert into user_account(user_id, user_password, nick_name, email,  created_at, created_by, modified_at, modified_by)values ('apple3', '1234','사과', 'apple11@apple1',  now(), 'admin', now(), 'admin');
+insert into user_account(user_id, user_password, nick_name, email,  created_at, created_by, modified_at, modified_by)values ('banana3', '1234','반하나', 'apple12@apple1',  now(), 'admin', now(), 'admin');
 
 
-insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (1,'Pannier', 'webeden.co.uk', 'Rubber', '2022-07-05', 'Common duiker', '2022-11-28', 'Yellow-throated sandgrouse');
-insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (1,'Keylex', 'diigo.com', 'Plexiglass', '2021-12-28', 'Peccary, collared', '2022-11-15', 'Common dolphin');
-insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (1,'Voltsillam', '1und1.de', 'Glass', '2022-07-20', 'Genet, common', '2022-07-08', 'Vulture, king');
-insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (1,'Quo Lux', 'domainmarket.com', 'Granite', '2021-12-28', 'Coot, red-knobbed', '2022-01-01', 'Darter, african');
-insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (1,'Bitwolf', 'simplemachines.org', 'Rubber', '2022-03-11', 'Springbok', '2022-07-27', 'Caracara (unidentified)');
-insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (1,'Biodex', '163.com', 'Vinyl', '2022-09-17', 'Gaur', '2022-01-08', 'Bear, black');
-insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (1,'Fix San', 'drupal.org', 'Wood', '2022-11-02', 'Phalarope, grey', '2022-10-08', 'Swan, black');
+insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (2,'Pannier', 'webeden.co.uk', 'Rubber', '2022-07-05', 'Common duiker', '2022-11-28', 'Yellow-throated sandgrouse');
+insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (2,'Keylex', 'diigo.com', 'Plexiglass', '2021-12-28', 'Peccary, collared', '2022-11-15', 'Common dolphin');
+insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (2,'Voltsillam', '1und1.de', 'Glass', '2022-07-20', 'Genet, common', '2022-07-08', 'Vulture, king');
+insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (2,'Quo Lux', 'domainmarket.com', 'Granite', '2021-12-28', 'Coot, red-knobbed', '2022-01-01', 'Darter, african');
+insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (2,'Bitwolf', 'simplemachines.org', 'Rubber', '2022-03-11', 'Springbok', '2022-07-27', 'Caracara (unidentified)');
+insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (2,'Biodex', '163.com', 'Vinyl', '2022-09-17', 'Gaur', '2022-01-08', 'Bear, black');
+insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (2,'Fix San', 'drupal.org', 'Wood', '2022-11-02', 'Phalarope, grey', '2022-10-08', 'Swan, black');
 insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (1,'Bitchip', 'stumbleupon.com', 'Brass', '2022-09-28', 'African elephant', '2022-09-26', 'Square-lipped rhinoceros');
 insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (1,'Greenlam', 'intel.com', 'Wood', '2021-12-17', 'Fork-tailed drongo', '2021-12-27', 'Phascogale, red-tailed');
 insert into article (user_account_id, title, content, hashtag, created_at, created_by, modified_at, modified_by) values (1,'Quo Lux', 'youku.com', 'Stone', '2022-01-20', 'Porcupine, indian', '2022-07-30', 'Woolly-necked stork');

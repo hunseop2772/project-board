@@ -13,7 +13,7 @@ import java.util.Set;
 @Getter
 @ToString
 @Table(indexes = {
-        @Index(columnList = "userid"),
+        @Index(columnList = "userid", unique = true),
         @Index(columnList = "email", unique = true),
         @Index(columnList = "createdAt"),
         @Index(columnList = "createdBy")
